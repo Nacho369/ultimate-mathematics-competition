@@ -1,0 +1,143 @@
+
+/* font-family: 'Righteous',
+cursive;
+font-family: 'Saira',
+sans-serif;
+font-family: 'Ubuntu',
+sans-serif;*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    margin: auto;
+    padding: 0 1.5em;
+}
+
+
+
+header{
+    width: 100vw;
+    background: #ffffff54;
+    /* background: #03112c; */
+    padding: 1em;
+    color: white;
+    position: fixed;
+    z-index: 9;
+}
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.logoFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoFlex img{
+    width: 400px;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navLinks a{
+    text-decoration: none;
+    color: #031b47;
+    margin-left: 2em;
+    transition: all .2s ease-in-out;
+}
+.navLinks li{ 
+    list-style: none;
+    font-family: 'Saira', sans-serif;
+    font-weight: 500;
+}
+.navLinks a:hover{
+    /* border-bottom: 2px solid yellow; */
+    color: #ffe600
+}
+.navHeavy{
+    padding: .7em 1.2em;
+    border-radius: 3px;
+    background: dodgerblue;
+}
+.navHeavy li{
+    color: white;
+}
+.navHeavy:hover{
+    background: #ffe600;
+}
+
+.home{
+    background: url('./images/img_3_edited.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+.home::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00000085;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.home .homeDisp{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    align-items: center;
+    color: white;
+}
+.home .homeIntro{
+    width: 80%;
+    padding: 2em;
+    justify-self: center;
+    text-align: center;
+    line-height: 5em;
+    /* display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center; */
+}
+.home .homeIntro h2{
+    font-size: 3em;
+    font-family: 'Saira', sans-serif;
+}
+.home .homeIntro p{
+    line-height: 1.5em;
+}
+.home .homeIntro .btnHome{
+    cursor: pointer;
+    padding: .7em 1.2em;
+    border-radius: 3px;
+    background: dodgerblue;
+    border: none;
+    color: white;
+    font-family: 'Saira', sans-serif;
+    transition: all .2s ease-in-out;
+}
+.home .homeIntro .btnHome:hover{
+    background: #031b47;
+}
+
+.aboutSection {
+    min-height: 100vh;
+    padding: 2em 0;
+}
