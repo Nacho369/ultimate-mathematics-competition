@@ -11,6 +11,7 @@ sans-serif;*/
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 html{
@@ -22,17 +23,35 @@ html{
     margin: auto;
     padding: 0 1.5em;
 }
+.heading {
+    font-size: 20px;
+    font-weight: bold;
+    color: #002447;
+    background: #1e8fff69;
+    padding: .3em;
+    width: fit-content;
+    border-radius: 3px;
+    margin-bottom: .3em;
+}
+.para {
+    font-size: 17px;
+}
 
 
 
-header{
-    width: 100vw;
+.header{
+    width: 100%;
     background: #ffffff54;
     /* background: #03112c; */
     padding: 1em;
-    color: white;
+    color: #0043b8;
     position: fixed;
     z-index: 9;
+    transition: all .2s ease-in-out;
+}
+.headerBg{
+    background: #000e27;
+    color: white;
 }
 .header-flex{
     display: flex;
@@ -54,17 +73,20 @@ header{
 }
 .navLinks a{
     text-decoration: none;
+    font-weight: bold;
     color: #031b47;
     margin-left: 2em;
     transition: all .2s ease-in-out;
 }
+.navChg{
+    color: white
+}
 .navLinks li{ 
     list-style: none;
     font-family: 'Saira', sans-serif;
-    font-weight: 500;
+    font-weight: bold;
 }
 .navLinks a:hover{
-    /* border-bottom: 2px solid yellow; */
     color: #ffe600
 }
 .navHeavy{
@@ -93,10 +115,13 @@ header{
     position: absolute;
     top: 0;
     left: 0;
-    background: #00000085;
+    background: #00000077;
     height: 100%;
     width: 100%;
     z-index: -1;
+}
+.colorSpan{
+    color: dodgerblue;
 }
 .home .homeDisp{
     height: 100vh;
@@ -107,16 +132,17 @@ header{
 }
 .home .homeIntro{
     width: 80%;
-    padding: 2em;
+    margin-top: 10em;
     justify-self: center;
     text-align: center;
-    line-height: 5em;
+    line-height: 7em;
     /* display: grid;
     grid-template-columns: 1fr;
     align-items: center;
     justify-content: center; */
 }
 .home .homeIntro h2{
+    line-height: 2em;
     font-size: 3em;
     font-family: 'Saira', sans-serif;
 }
@@ -137,7 +163,120 @@ header{
     background: #031b47;
 }
 
+
+/* ABOUT SECTION */
+
 .aboutSection {
-    min-height: 100vh;
+    min-height: fit-content;
+    padding: 2em 0;
+    background: #1e8fff17;
+}
+.imageBox{
+    width: 100%;
+}
+.imageBox img{
+    width: 100%;
+    border-radius: 3px;
+}
+.aboutSection-1{
+    padding: 1em 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+}
+.aboutContent-1{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: .5em;
+    border-radius: 3px;
+}
+.ourMission h3, .ourVision h3{
+    margin-bottom: .3em;
+}
+
+
+.achievmentSection{
+    min-height: 50vh;
+    display: grid;
+    grid-template-columns: auto;
+    background: url('./images/img_5.jpg');
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+.achievmentSection::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000000b4;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.achievement{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.examsNo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.examsNo i{
+    padding: .5em;
+    border-radius: 50%;
+    background: white;
+    font-size: 2.5em;
+    color: dodgerblue;
+}
+.examsNo .noOfExams{
+    font-size: 3em;
+    margin: .5em 0;
+}
+.studentsNo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.studentsNo i {
+    padding: .5em;
+    border-radius: 50%;
+    background: white;
+    font-size: 2.5em;
+    color: dodgerblue;
+}
+.studentsNo .noOfStudents {
+    font-size: 3em;
+    margin: .5em 0;
+}
+
+
+.testimonialSection{
+    min-height: 50vh;
     padding: 2em 0;
 }
+.testimonials{
+    margin: 1em 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.card{
+    border-radius: 3px;
+    margin: 0 .3em;
+    box-shadow: 1px 1px 3px 1px #0000009a;
+}
+.card img{
+    width: 100%;
+}
+.testimonialCardContent{
+    padding: .5em;
+}
+

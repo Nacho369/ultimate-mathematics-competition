@@ -11,15 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Saira:wght@300;400&family=Ubuntu&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+
     <link rel="stylesheet" href="style.css">
 
-    <script src="./main.js"></script>
     <title>Ultimate Mathematics Competition</title>
 </head>
 
 <body>
 
-    <header>
+    <header class="header">
         <div class="container header-flex">
             <div class="logoFlex">
                 <img src="./images/umc_logo_full.png" alt="" srcset="">
@@ -40,13 +41,20 @@
                     <li>Login</li>
                 </a>
             </nav>
+
+            <!-- <nav class="navLinks">
+                <li><a href="">Home</a></li>
+                <li><a href="">Abi</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+            </nav> -->
         </div>
     </header>
 
     <main class="home">
         <div class="container homeDisp">
             <div class="homeIntro">
-                <h2>BEAT THE BEST & BE THE BEST</h2>
+                <h2>BEAT THE BEST & <span class="colorSpan">BE THE BEST</span></h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi unde voluptatibus ratione et rerum
                     veniam
                     a aliquam quisquam totam neque ea blanditiis, doloribus aliquid culpa quidem ut, esse maxime
@@ -61,82 +69,96 @@
     <section class="aboutSection">
         <div class="container">
             <div class="aboutUs">
-                <div class="aboutHead">
-                    <h2>- About Us -</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, sequi possimus. Esse iste
-                        consequuntur,
-                        laudantium, quisquam, praesentium quasi aliquid est possimus quam incidunt beatae consectetur
-                        magni
-                        laboriosam eius inventore vitae.</p>
-                </div>
+                <div class="aboutSection-1">
+                    <div class="aboutContent-1">
+                        <div class="aboutHead">
+                            <p class="heading">- About Us -</h2>
+                            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ex?</p>
+                        </div>
 
-                <div class="aboutContent">
-                    <div class="aboutContent1">
-                        <div class="aboutContent1Text">
+                        <div class="ourMission">
                             <h3>Our Mission</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iusto molestias nostrum quos
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iusto molestias nostrum
+                                quos
                                 consequatur alias
                                 exercitationem consectetur unde adipisci aliquid.</p>
                         </div>
 
-                        <img src="" alt="" srcset="">
-                    </div>
-
-                    <div class="aboutContent2">
-                        <div class="aboutContent2Text">
+                        <div class="ourVision">
                             <h3>Our Vision</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iusto molestias nostrum quos
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iusto molestias nostrum
+                                quos
                                 consequatur alias
                                 exercitationem consectetur unde adipisci aliquid.</p>
                         </div>
-
-                        <img src="" alt="" srcset="">
+                    </div>
+                    <div class="imageBox">
+                        <img src="./images/img_1.jpg" alt="">
                     </div>
                 </div>
+            </div>
+    </section>
 
-                <div class="achievement">
-                    <div class="examNo">
-                        <i></i>
-                        <p class="noOfExams">0</p>
-                        <p>Number of Exams Done</p>
-                    </div>
+    <section class="achievmentSection">
+        <div class="container achievement">
+            <div class="examsNo">
+                <i class="fa-solid fa-book-open"></i>
+                <p class="noOfExams">0</p>
+                <p>Number of Exams Done</p>
+            </div>
 
-                    <div class="studentsNo">
-                        <i></i>
-                        <p class="noOfStudents">0</p>
-                        <p>Number of Students</p>
-                    </div>
-                </div>
+            <div class="studentsNo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <p class="noOfStudents">0</p>
+                <p>Number of Students</p>
+            </div>
+        </div>
+    </section>
 
-                <din class="testimonials">
-                    <div class="testimonial1">
-                        <img src="" alt="" srcset="">
+    <section class="testimonialSection">
+        <div class="container">
+            <div class="aboutHead">
+                <p class="heading">- Testimonials -</h2>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nobis saepe quam inventore est adipisci provident autem iure. Adipisci, minima.</p>
+            </div>
+            <div class="testimonials">
+                <div class="testimonial1 card">
+                    <img src="./images/user2.jpg" alt="">
+
+                    <div class="testimonialCardContent">
                         <h4>Name of Student 1</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam quod eveniet tempore
                             voluptatum consectetur aperiam, est ex laborum aut ducimus.</p>
                     </div>
+                </div>
 
-                    <div class="testimonial2">
-                        <img src="" alt="" srcset="">
+                <div class="testimonial2 card">
+                    <img src="./images/user1.jpg" alt="">
+
+                    <div class="testimonialCardContent">
                         <h4>Name of Student 2</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam quod eveniet tempore
                             voluptatum consectetur aperiam, est ex laborum aut ducimus.</p>
                     </div>
+                </div>
 
-                    <div class="testimonial3">
-                        <img src="" alt="" srcset="">
+                <div class="testimonial3 card">
+                    <img src="./images/user3.jpg" alt="">
+
+                    <div class="testimonialCardContent">
                         <h4>Name of Student 3</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam quod eveniet tempore
                             voluptatum consectetur
                             aperiam, est ex laborum aut ducimus.</p>
                     </div>
-                </din>
+                </div>
             </div>
         </div>
     </section>
 
     <footer></footer>
 
+    <script src="./main.js"></script>
 </body>
 
 </html>
