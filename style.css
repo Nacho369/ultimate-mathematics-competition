@@ -37,11 +37,38 @@ html{
     font-size: 17px;
 }
 
+.bars{
+    cursor: pointer;
+    display: none;
+    align-self: center;
+    justify-self: center;
+    min-height: 20px;
+    overflow: hidden;
+}
+.bar{
+    width: 22px;
+    height: 3px;
+    background: black;
+    margin: 3px 0;
+    transition: all .2s ease-in-out;
+}
+.bar:nth-child(1).closeBtn {
+    transform: rotate(45deg) translate(4.5px, 4px);
+}
+
+.bar:nth-child(2).closeBtn {
+    display: none;
+}
+
+.bar:nth-child(3).closeBtn {
+    transform: rotate(-45deg);
+}
+
 
 
 .header{
     width: 100%;
-    background: #ffffff54;
+    background: #ffffff9a;
     /* background: #03112c; */
     padding: 1em;
     color: #0043b8;
@@ -55,13 +82,12 @@ html{
 }
 .header-flex{
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
-.logoFlex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/* .logoFlex{
+    
+} */
 .logoFlex img{
     width: 400px;
 }
@@ -142,11 +168,13 @@ html{
     justify-content: center; */
 }
 .home .homeIntro h2{
-    line-height: 2em;
+    overflow: hidden;
+    line-height: 1.5em;
     font-size: 3em;
     font-family: 'Saira', sans-serif;
 }
 .home .homeIntro p{
+    margin-top: 1em;
     line-height: 1.5em;
 }
 .home .homeIntro .btnHome{
@@ -191,6 +219,9 @@ html{
     justify-content: space-between;
     padding: .5em;
     border-radius: 3px;
+}
+.aboutContent-1 .para{
+    margin-bottom: 1em;
 }
 .ourMission h3, .ourVision h3{
     margin-bottom: .3em;
@@ -260,7 +291,6 @@ html{
 
 
 .testimonialSection{
-    min-height: 50vh;
     padding: 2em 0;
 }
 .testimonials{
@@ -270,13 +300,213 @@ html{
 }
 .card{
     border-radius: 3px;
-    margin: 0 .3em;
-    box-shadow: 1px 1px 3px 1px #0000009a;
+    margin: .3em;
+    box-shadow: 1px 1px 3px 1px #00000071;
 }
 .card img{
     width: 100%;
 }
 .testimonialCardContent{
-    padding: .5em;
+    padding: .8em;
 }
 
+
+
+.faqSection{
+    /* background: url(./images/); */
+    min-height: 50vh;
+    padding: 2em 0;
+}
+.accordion{
+    margin: 0 0 1em 0;
+    padding: 1em;
+    background: #eeeeee;
+    border-radius: 5px;
+}
+.faqDisplay{
+    margin: .8em 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: .7em;
+}
+/* .faqImg{
+    /* order: 2; 
+} */
+img{
+    width: 100%;
+    border-radius: 5px;
+}
+.accordionLabel{
+    width: 100%;
+    margin: 0 0 .5em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.accordionLabel p{
+    font-size: 1.05em;
+    font-weight: bold;
+    margin: .5em 0;
+}
+.accordionLabel i{
+    cursor: pointer;
+    font-size: 1.3em;
+    transition: all .5s ease;
+}
+.faqContent{
+    margin: .5em 0 0 0;
+    transition: all .5s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+.accordion.active .faqContent {
+    max-height: 300px;
+}
+.accordion.active i {
+    transform: rotate(180deg);
+}
+
+
+
+
+.contactSection{
+    min-height: 50vh;
+    padding: 2em 0;
+}
+.contactImgContent{
+    width: 100%;
+    height: 100%;
+}
+.contactImgContent img{
+    width: 100%;
+    background-size: cover;
+    
+}
+.contactDisp{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    margin-top: .8em;
+}
+.contactTextContents{
+    display: flex;
+    flex-direction: column;
+}
+.formContent{
+    display: flex;
+    flex-direction: column;
+}
+.formContent input{
+    margin-bottom: .8em;
+}
+.formContent input, .formContent textarea{
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    padding: .8em;
+    border: 1px solid grey;
+    font-size: .8em;
+    outline: none;
+}
+
+.contactBtn{
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: .8em;
+    width: 100%;
+    padding: .8em;
+    border: none;
+    font-size: .8em;
+    outline: none;
+    background: dodgerblue;
+    color: white;
+}
+.contactBtn:hover{
+    background: #147ee7;
+}
+
+
+
+
+
+footer {
+    width: 100%;
+    background: #000714;
+    padding: 2em;
+    transition: all .2s ease-in-out;
+}
+.footerDisplay1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footerImg img{
+    width: 300px;
+}
+.subscribe p{
+    color: white;
+    margin: 0 0 .8em 0;
+    text-align: center;
+}
+.subscribe input{
+    padding: .5em .8em;
+    margin: 0;
+    border: 2px solid white;
+    outline: none;
+}
+.subscribe button{
+    padding: .5em .8em;
+    margin: 0;
+    border: 2px solid #0043b8;
+    outline: none;
+    background: #0043b8;
+    color: white;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.subscribe button:hover{
+    border: 2px solid #0043b8;
+    background: none;
+    color: white;
+}
+.footerDisplay2{
+    margin: 1.5em 0 0 0;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerDisplay2 p{
+    color: white;
+    width: fit-content;
+
+}
+.footerDisplay2 .socialLinks a{
+    color: white;
+    text-decoration: none;
+    margin-left: .8em;
+    width: fit-content;
+    transition: all .2s ease-in-out;
+}
+.footerDisplay2 .socialLinks a:nth-child(1):hover{
+    color: #00218f;
+}
+.footerDisplay2 .socialLinks a:nth-child(2):hover{
+    color: #004ab9;
+}
+.footerDisplay2 .socialLinks a:nth-child(3):hover{
+    color: #00790a;
+}
+.footerDisplay2 .socialLinks a:nth-child(4):hover {
+    color: #be0000;
+}
+.footerDisplay2 .socialLinks a i{
+    font-size: 1.1em;
+}
+
+.footerDisplay3{
+    text-align: center;
+    width: 100%;
+    margin: 1.5em 0 0 0;
+    color: white;
+}
