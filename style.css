@@ -46,14 +46,14 @@ html{
     overflow: hidden;
 }
 .bar{
-    width: 22px;
-    height: 3px;
+    width: 20px;
+    height: 2px;
     background: black;
     margin: 3px 0;
     transition: all .2s ease-in-out;
 }
 .bar:nth-child(1).closeBtn {
-    transform: rotate(45deg) translate(4.5px, 4px);
+    transform: rotate(45deg) translate(4px, 3px);
 }
 
 .bar:nth-child(2).closeBtn {
@@ -339,6 +339,7 @@ img{
 .accordionLabel{
     width: 100%;
     margin: 0 0 .5em 0;
+    padding: 0 .5em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -347,9 +348,13 @@ img{
     font-size: 1.05em;
     font-weight: bold;
     margin: .5em 0;
+    width: 80%;
 }
 .accordionLabel i{
+    justify-content: flex-end;
+    text-align: end;
     cursor: pointer;
+    width: 10%;
     font-size: 1.3em;
     transition: all .5s ease;
 }

@@ -102,7 +102,17 @@
         justify-content: center;
         align-items: center;
     }
+    .subscribe input {
+        width: 100vw;
+    }
+
+    .subscribe button {
+        margin: 3px 0 0 0;
+        display: block;
+        width: 100vw;
+    }
     .footerImg img {
+        width: 250px;
         margin-bottom: 2em;
     }
     .footerDisplay2 {
@@ -119,10 +129,10 @@
 
 @media only screen and (max-width: 640px){
     .header-flex{
-        max-height: 60px;
+        max-height: 50px;
     }
     .logoFlex img {
-        width: 300px;
+        width: 250px;
     } 
 
 
