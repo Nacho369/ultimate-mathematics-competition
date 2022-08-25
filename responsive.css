@@ -130,7 +130,7 @@
 @media only screen and (max-width: 640px){
 
     .para{
-        font-size: 15px;
+        font-size: 14px;
     }
     .home {
         min-height: 80vh;
@@ -145,7 +145,7 @@
 
 
     .header-flex{
-        max-height: 35px;
+        max-height: 40px;
     }
     .header .container{
         max-width: 1024px;
