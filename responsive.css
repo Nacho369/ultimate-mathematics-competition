@@ -128,6 +128,9 @@
 
 
 @media only screen and (max-width: 640px){
+    .body p{
+    font-size: 10px;
+    }
     .header-flex{
         max-height: 35px;
     }
