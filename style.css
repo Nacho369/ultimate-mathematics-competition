@@ -268,7 +268,7 @@ html{
     color: dodgerblue;
 }
 .examsNo .noOfExams{
-    font-size: 3em;
+    font-size: 2.5em;
     margin: .5em 0;
 }
 .studentsNo {
@@ -285,7 +285,7 @@ html{
     color: dodgerblue;
 }
 .studentsNo .noOfStudents {
-    font-size: 3em;
+    font-size: 2.5em;
     margin: .5em 0;
 }
 

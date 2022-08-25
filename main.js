@@ -1,3 +1,17 @@
+window.addEventListener('load', () => {
+    let images = document.querySelectorAll('img');
+    let loader = document.querySelector('.loader');
+    let site = document.querySelector('.body')
+    images.forEach(image => {
+        let isLoaded = image.complete && image.naturalHeight !== 0 && image.height;
+        if (isLoaded) {
+            loader.style.display = "none";
+            site.style.display = "inline";
+        }
+    })
+})
+
+
 
 const header = document.querySelector('header');
 const navLinks = document.querySelectorAll('.navLinks li');
@@ -31,27 +45,14 @@ window.addEventListener('scroll', () => {
 })
 
 
-let noOfStudents = document.querySelector('.noOfStudents');
-let noOfExams = document.querySelector('.noOfExams');
-let addNoOfStud = parseInt(noOfStudents.innerHTML);
-let addNoOfExam = parseInt(noOfExams.innerHTML);
+
+
+
 let accordions = document.querySelectorAll('.accordion');
 let bars = document.querySelector('.bars');
 let nav = document.querySelector('.header-flex');
 window.addEventListener('load', () => {
     
-    // noOfStudents.innerHTML = 2;
-    let counter = 20;
-    const countUp = () => {
-        if(addNoOfStud < counter && addNoOfExam < counter){
-            addNoOfStud++;
-            addNoOfExam++;
-            noOfStudents.innerHTML = addNoOfStud;
-            noOfExams.innerHTML = addNoOfExam;
-        }
-    }
-    setInterval(countUp, 500);
-
     accordions.forEach(accordion => {
         accordion.addEventListener('click', () => {
             accordion.classList.toggle('active');
@@ -64,9 +65,53 @@ window.addEventListener('load', () => {
         burgers.forEach(bar => {
             bar.classList.toggle('closeBtn');
         })
+    }) 
+});
+
+
+
+
+
+
+
+const counters = document.querySelectorAll('.counter');
+const speed = 500;
+//countUp();
+
+const countUp = () => {
+    counters.forEach(counter => {
+        const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText;
+            const inc = Math.round(target / speed);
+            
+            if (count < target){
+                counter.innerText = count + inc;
+                setTimeout(updateCount, 300)
+            }
+            else{
+                count.innerText = target;
+            }
+        }
+        updateCount();
     })
+};
 
-    
 
-    
+window.addEventListener('scroll', () => {
+
+    let onViewEffect = document.querySelector(".achievmentSection");
+    let screenHeight = window.innerHeight;
+    let position = onViewEffect.getBoundingClientRect().top;
+    //let valid = true;
+
+    console.log(position);
+    if(position < screenHeight){
+        countUp()
+        // valid = false;
+    }
+    else{
+        // clearInterval(setInterval(countUp, 800));
+    }
+
 });
