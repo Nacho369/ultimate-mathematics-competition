@@ -447,6 +447,9 @@ footer {
 .footerImg img{
     width: 300px;
 }
+.subscribe{
+    width: 100%;
+}
 .subscribe p{
     color: white;
     margin: 0 0 .8em 0;

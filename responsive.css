@@ -103,13 +103,13 @@
         align-items: center;
     }
     .subscribe input {
-        width: 100vw;
+        width: 100%;
     }
 
     .subscribe button {
         margin: 3px 0 0 0;
         display: block;
-        width: 100vw;
+        width: 100%;
     }
     .footerImg img {
         width: 250px;
