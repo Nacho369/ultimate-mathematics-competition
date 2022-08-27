@@ -12,6 +12,7 @@
 
 body{
     font-family: 'Anek Telugu', sans-serif;
+    overflow-x: hidden;
 }
 .homeLink{
     width: fit-content;
@@ -93,24 +94,23 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    min-height: 70vh;
 }
 .head .image{
     width: 300px;
-    margin-bottom: 2.5em;
+    margin-bottom: 1.5em;
 }
-.image img{
+.head .image img{
     width: 100%;
 }
-.logoText{
+.head h2{
     text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-.logoText h2{
     margin-bottom: 1em;
 }
-.logoText p{
-    margin-bottom: 2em;
+.head p{
+    text-align: center;
+    margin-bottom: 1em;
 }
 
 /* FORM STYLING STARTS HERE */

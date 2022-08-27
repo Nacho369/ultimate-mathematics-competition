@@ -397,6 +397,7 @@ img{
     justify-content: space-around;
     align-items: center;
     height: 150px;
+    width: 100%;
 }
 .registerContent h2{
     color: white;
@@ -404,6 +405,7 @@ img{
 }
 .registerContent p{
     color: white;
+    text-align: center;
 }
 .registerContent .registerBtn {
     cursor: pointer;
