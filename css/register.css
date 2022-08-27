@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+        /* font-family: 'Anek Telugu',
+        sans-serif;
+    
+        font-family: 'Raleway',
+        sans-serif; */
+
+body{
+    font-family: 'Anek Telugu', sans-serif;
+}
+.homeLink{
+    width: fit-content;
+    margin-bottom: 2em;
+    background-color: dodgerblue;
+    border-radius: 3px;
+    transition: all .2s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homeLink:hover{
+    background-color: #0070e0;
+}
+.homeLink a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.homeLink i{
+    padding: .7em 1em;
+    padding-bottom: 0;
+    color: white;
+    cursor: pointer;
+}
+.options {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.opt {
+    margin-right: 1em;
+}
+.btn{
+    background: dodgerblue;
+    border: 2px solid dodgerblue;
+    color: white;
+    border-radius: 3px;
+    padding: .5 1em;
+    transition: all .1s ease-in-out;
+}
+.btn:hover {
+    background: none;
+    color: dodgerblue;
+}
+.infoSectBold {
+    font-weight: bolder;
+}
+.infoSect {
+    margin-top: 1em;
+}
+
+.infoSect4 ul {
+    padding: 1em 2em;
+}
+.note{
+    margin-top: 1em;
+    font-style: italic;
+    font-weight: bold;
+    color: #d10000;
+}
+/* input[type="radio"]{
+    
+} */
+
+
+
+.registerBody{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.head{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.head .image{
+    width: 300px;
+}
+.image img{
+    width: 100%;
+}
+.logoText{
+    text-align: center;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* FORM STYLING STARTS HERE */
+form{
+    width: 100%;
+}
+.labelInput{
+    font-weight: bold;
+}
+.labelInput::after{
+    content: " \2217";
+    font-weight: bold;
+    color: #c90000;
+}
+
+form input{
+    padding: .6em .8em;
+    margin: 1em 0em;
+    outline: none;
+}
+
+form fieldset{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .8em;
+    border: 1px solid #8f8f8f;
+    border-radius: 2px;
+}
+form legend{
+    padding: 0 1em;
+}
+
+.sect2{
+    margin-top: 1em;
+    display: flex;
+}
+.sect2 .school input{
+    padding: 1em .8em;
+}
+.sect2 .school{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.sect2 fieldset{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    width: 60%;
+    margin-left: 10px;
+}
+.sect2 fieldset input:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.sect2 fieldset input:nth-child(3) {
+    margin-right: 10px;
+}
+.sect2 fieldset select{
+    padding: .6em .8em;
+    margin: 1em .7em;
+    outline: none;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+/* .sect2 fieldset select option *{
+    background-color: black;
+    color: white;
+} */
+
+.sect3{
+    margin-top: 1em;
+    display: flex;
+}
+.sect3 .dob{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.sect3 .class{
+    width: 60%;
+    margin-left: 1.3em;
+}
+
+.sect4{
+    display: flex;
+    margin-top: 1em;
+}
+.sect4 .gender {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.sect4 .passport{
+    width: 60%;
+    margin-left: 1.3em;
+    display: flex;
+    flex-direction: column;
+}
+.sect4 .passport .file{
+    background: #cecece;
+    padding: 1em;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.fileBtn{
+    background: white;
+    padding: .35em 1em;
+    margin: .8em;
+    font-weight: bold;
+    border-radius: 3px;
+    color: dodgerblue;
+    border: 1.5px solid dodgerblue;
+}
+
+.sect5{
+    display: flex;
+    margin-top: 1em;
+}
+.sect5 input{
+    margin: .5em 0;
+}
+.sect5 .number p{
+    font-style: italic;
+    font-size: 14px;
+}
+.sect5 .number,
+.email,
+.username{
+    display: flex;
+    flex-direction: column;
+}
+.sect5 .number, .email{
+    margin-right: 1em;
+}
+
+
+.aboutForm{
+    margin-top: 2em;
+}
+.aboutForm h3{
+    font-weight: bolder;
+    margin: .8em 0;
+}
+.aboutForm .q5 {
+    margin-top: 5em;
+}
+.info{
+    margin-top: 1.5em;
+}
+
+
+
+
+@media only screen and (max-width: 725px) {
+    form .fullname input {
+        width: 100%;
+    }
+    form fieldset {
+        display: flex;
+        flex-direction: column;
+    } 
+    label, legend{
+        font-size: 13px;
+    }
+
+    .sect2{
+        display: flex;
+        flex-direction: column;
+    }
+    .sect2 .school{
+        width: 100%;
+    }
+    .sect2 fieldset {
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+    }
+    .sect2 fieldset input{
+        width: 100%;
+    }
+    .sect2 fieldset select {
+        width: 100%;
+        margin: 1em 0;
+    }
+
+    .sect3{
+        display: flex;
+        flex-direction: column;
+    }
+    .sect3 .dob {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .sect3 .class {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .sect4 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1em;
+    }
+
+    .sect4 .gender {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sect4 .passport {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+
+    .sect5 {
+        display: flex;
+        flex-direction: column;
+    }
+    .sect5 .number,
+    .email,
+    .username {
+        margin-top: 1em;
+    }
+
+    .aboutForm h3 {
+        font-size: 16px;
+    }
+
+    .infoSect h4{
+        font-size: 14px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 400px) {
+    .head {
+        height: 40vh;
+    }
+    .head .image {
+        width: 250px;
+    }
+    .logoText h2{
+        font-size: 19px;
+    }
+    .logoText {
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 2em;
+    }
+}
