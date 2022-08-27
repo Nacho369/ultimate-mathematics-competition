@@ -60,12 +60,15 @@ body{
 .infoSectBold {
     font-weight: bolder;
 }
-.infoSect {
+.infoSect{
     margin-top: 1em;
 }
-
-.infoSect4 ul {
+.infoSect4 ul{
     padding: 1em 2em;
+    display: list-item;
+}
+.infoSect4 ul li{
+    display: list-item;
 }
 .note{
     margin-top: 1em;
@@ -87,24 +90,27 @@ body{
 
 .head{
     width: 100%;
-    height: 60vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
 }
 .head .image{
     width: 300px;
+    margin-bottom: 2.5em;
 }
 .image img{
     width: 100%;
 }
 .logoText{
     text-align: center;
-    height: 20%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+}
+.logoText h2{
+    margin-bottom: 1em;
+}
+.logoText p{
+    margin-bottom: 2em;
 }
 
 /* FORM STYLING STARTS HERE */

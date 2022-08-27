@@ -398,7 +398,11 @@ img{
     align-items: center;
     height: 150px;
 }
-.registerContent h2, .registerContent p{
+.registerContent h2{
+    color: white;
+    text-align: center;
+}
+.registerContent p{
     color: white;
 }
 .registerContent .registerBtn {
