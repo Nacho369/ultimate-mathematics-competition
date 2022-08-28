@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: "Anek Telugu", sans-serif;
+}
 .container{
     max-width: 900px;
     margin: 0 auto;
@@ -94,7 +97,7 @@
     background: #000000b2;
     z-index: -1;
 }
-.formContainer h3{
+.formContainer h2{
     margin: 1em 0;
 }
 form{
@@ -113,6 +116,8 @@ form{
     border: none;
     border-radius: 3px;
     outline: none;
+    color: black;
+    font-family: "Raleway", sans-serif;
 }
 .formContainer .password {
     display: flex;
@@ -124,6 +129,8 @@ form{
         border: none;
         border-radius: 3px;
         outline: none;
+        color: black;
+        font-family: "Raleway", sans-serif;
 }
 .formContainer .button{
     text-align: center;
