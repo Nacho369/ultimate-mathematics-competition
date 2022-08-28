@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.space{
+    height: 50vh;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bars {
+    cursor: pointer;
+    display: none;
+    align-self: center;
+    justify-self: center;
+    min-height: 20px;
+    overflow: hidden;
+}
+
+.bar {
+    width: 20px;
+    height: 2px;
+    background: white;
+    margin: 3px 0;
+    transition: all .2s ease-in-out;
+}
+
+.bar:nth-child(1).closeBtn {
+    transform: rotate(45deg) translate(4px, 3px);
+}
+
+.bar:nth-child(2).closeBtn {
+    display: none;
+}
+
+.bar:nth-child(3).closeBtn {
+    transform: rotate(-45deg);
+}
+
+.header {
+    width: 100%;
+    background: #000e27;
+    /* background: #03112c; */
+    padding: 1em;
+    color: #0043b8;
+    position: relative;
+    z-index: 9;
+    transition: all .2s ease-in-out;
+}
+
+.headerBg {
+    background: #000e27;
+    color: white;
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .logoFlex{
+    
+} */
+.logoFlex img {
+    width: 400px;
+    margin: .5em 0;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLinks a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    margin-left: 2em;
+    transition: all .2s ease-in-out;
+}
+
+.navChg {
+    color: white
+}
+
+.navLinks li {
+    list-style: none;
+    font-family: 'Saira', sans-serif;
+    font-weight: bold;
+}
+
+.navLinks a:hover {
+    color: #ffe600
+}
+
+.navHeavy {
+    padding: .7em 1.2em;
+    border-radius: 3px;
+    background: dodgerblue;
+}
+
+.navHeavy li {
+    color: white;
+}
+
+.navHeavy:hover {
+    background: #ffe600;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+.containerHead{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .homeLink {
+    width: fit-content;
+    background-color: dodgerblue;
+    border-radius: 3px;
+    transition: all .2s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeLink:hover {
+    background-color: #0070e0;
+}
+
+.homeLink a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.homeLink i {
+    padding: .7em 1em;
+    padding-bottom: 0;
+    color: white;
+    cursor: pointer;
+} */
+
+
+
+.userContent{
+    box-shadow: 1px 1px 5px 1px #80808073;
+    border-radius: 5px;
+    margin-top: 2.5em;
+    padding: 1em;
+}
+.userContent .userHead{
+    margin: 1em;
+    font-size: 1.8em;
+}
+.userInfo{
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.userInfo1{
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.userInfo1 .image{
+    width: 200px;
+    text-align: center;
+}
+.userInfo1 .image img{
+    width: 100%;
+    border-radius: 50%;
+}
+.userInfo1 .usernameInfo{
+    margin-top: .5em;
+    line-height: 1.5em;
+    text-align: center;
+}
+.userInfo2{
+    width: 100%;
+    padding: 1em;
+}
+.userInfo2 .userInfo2Box1{
+    line-height: 2em;
+    box-shadow: 1px 1px 3px 1px #808080cc;
+    border-radius: 8px;
+    padding: 1em;
+}
+.userInfo2Box1{
+
+}

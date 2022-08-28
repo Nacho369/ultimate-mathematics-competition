@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+.head{
+    margin: 2em 0;
+    position: relative;
+
+}
+.homeLink {
+    width: fit-content;
+    margin-bottom: 2em;
+    background-color: dodgerblue;
+    border-radius: 3px;
+    transition: all .2s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 2em;
+}
+.homeLink:hover {
+    background-color: #0070e0;
+}
+.homeLink a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.homeLink i {
+    padding: .7em 1em;
+    padding-bottom: 0;
+    color: white;
+    cursor: pointer;
+}
+.head .logoDisp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image {
+    width: 250px;
+}
+.image img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+.loginForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5em;
+    width: 100%;
+}
+.formContain{
+    width: 500px;
+}
+.formContainer{
+    background: url(../images/img_9.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em 1em;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+.formContainer::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000b2;
+    z-index: -1;
+}
+.formContainer h3{
+    margin: 1em 0;
+}
+form{
+    width: 80%;
+}
+.formContainer .username{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em 0;
+}
+.formContainer label {
+    margin-bottom: .5em;
+}
+.formContainer .username input {
+    padding: .8em 1em;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+.formContainer .password {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em 0;
+}
+.formContainer .password input {
+        padding: .8em 1em;
+        border: none;
+        border-radius: 3px;
+        outline: none;
+}
+.formContainer .button{
+    text-align: center;
+}
+.formContainer .btn{
+    cursor: pointer;
+    background: dodgerblue;
+    color: white;
+    padding: .7em 2em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    transition: all .2s ease;
+}
+.formContainer .btn:hover{
+    border: 2px solid dodgerblue;
+    background: none;
+}
+
+@media only screen and (max-width: 720px){
+    .image {
+        width: 200px;
+    }
+
+    .formContainer {
+        padding: 1em .5em;
+    }
+}
