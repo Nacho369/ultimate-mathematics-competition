@@ -16,7 +16,7 @@ body{
 }
 .homeLink{
     width: fit-content;
-    margin-bottom: 2em;
+    margin-bottom: .8em;
     background-color: dodgerblue;
     border-radius: 3px;
     transition: all .2s ease-in;
