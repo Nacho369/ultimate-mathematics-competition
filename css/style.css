@@ -16,6 +16,7 @@ sans-serif;*/
 
 html{
     font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .container{
@@ -373,7 +374,7 @@ img{
 
 .register{
     padding: 2em 0;
-    min-height: 30vh;
+    min-height: 35vh;
     background: url("../images/img_8.jpg");
     background-size: cover;
     background-position: center;
@@ -421,6 +422,73 @@ img{
 
 .registerContent .registerBtn:hover {
     background: #031b47;
+}
+
+
+
+.newsSection {
+    /* background: url(./images/); */
+    min-height: 50vh;
+    padding: 2em 0;
+}
+.newsContent{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+.newsCard1{
+    background: url("../images/img_8.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    text-align: center;
+    min-height: 350px;
+    width: 300px;
+    margin: .8em 0;
+    margin-right: .8em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+.newsCard1::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0007145b;
+    z-index: -1;
+}
+.card1Content{
+    width: 100%;
+    padding: 1.5em .7em;
+    background-color: #0000008c;
+    border-radius: 2px;
+}
+.card1Content h3{
+    margin: .7em 0;
+    color: #fff;
+}
+.card1Content button{
+    cursor: pointer;
+    padding: .8em;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    background-color: #002447;
+    color: #fff;
+    transition: all .1s ease-in-out;
+}
+.card1Content button:hover{
+    background-color: transparent;
+    font-weight: bold;
+    border: 2px solid #fff;
 }
 
 

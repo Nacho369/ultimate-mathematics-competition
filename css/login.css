@@ -136,6 +136,7 @@ form{
     text-align: center;
 }
 .formContainer .btn{
+    font-family: "Raleway", sans-serif;
     cursor: pointer;
     background: dodgerblue;
     color: white;

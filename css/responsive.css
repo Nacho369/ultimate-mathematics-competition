@@ -1,3 +1,16 @@
+@media only screen and (max-width: 990px)
+{
+    /* .newsContent {
+        grid-template-columns: repeat(2, 1fr);
+    } */
+
+    .newsCard1 {
+        text-align: center;
+        min-height: 300px;
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 860px){
     .heading {
         font-size: 18px;
@@ -81,6 +94,7 @@
     }
 
 
+
     .faqDisplay {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -92,6 +106,21 @@
     }
     .faqContent p{
         font-size: 13px;
+    }
+
+
+
+    .newsContent {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .newsCard1 {
+        text-align: center;
+        min-height: fit-content;
+        width: 90%;
+        align-self: center;
+        justify-self: center;
     }
 
 
@@ -197,6 +226,20 @@
     .card {
         width: 95%;
         margin: 1em auto;
+    }
+
+
+
+    .newsContent {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .newsCard1 {
+        text-align: center;
+        min-height: fit-content;
+        width: 95%;
     }
 
 

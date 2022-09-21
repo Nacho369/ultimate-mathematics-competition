@@ -11,6 +11,18 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.userIcon{
+    width: 30px;
+    margin-left: 2em;
+}
+.userIcon img{
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 100%;
+}
+
+
+
 .bars {
     cursor: pointer;
     display: none;
@@ -166,14 +178,29 @@ body{
 
 
 .userContent{
-    box-shadow: 1px 1px 5px 1px #80808073;
+    border: 1px solid grey;
+    box-shadow: 1px 1px 5px 1px #46464673;
     border-radius: 5px;
-    margin-top: 2.5em;
+    margin-top: 1.5em;
     padding: 1em;
 }
 .userContent .userHead{
-    margin: 1em;
-    font-size: 1.8em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.userContent .dashboard{
+    background: #001a35;
+    border-radius: 3px;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.dashboard i{
+    font-size: 1.5em;
+    margin-right: .5em;
+    color: dodgerblue
 }
 .userInfo{
     margin-top: 1em;
@@ -181,7 +208,7 @@ body{
     grid-template-columns: 40% 60%;
 }
 .userInfo1{
-    width: 100%;
+    width: fit-content;
     padding: 1em;
     display: flex;
     flex-direction: column;
@@ -195,6 +222,7 @@ body{
 }
 .userInfo1 .image img{
     width: 100%;
+    border: 5px solid #000e27;
     border-radius: 50%;
 }
 .userInfo1 .usernameInfo{
@@ -208,7 +236,7 @@ body{
 }
 .userInfo2 .userInfo2Box1{
     line-height: 2em;
-    box-shadow: 1px 1px 3px 1px #808080cc;
+    box-shadow: 1px 1px 5px 1px #000e27;
     border-radius: 8px;
     padding: 1em;
 }
