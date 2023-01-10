@@ -3,9 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-.space{
-    height: 50vh;
-}
 
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -13,43 +10,27 @@ body{
 
 .userIcon{
     width: 30px;
-    margin-left: 2em;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 10px;
+    cursor: pointer;
 }
 .userIcon img{
-    border: 3px solid white;
+    width: 30px;
     border-radius: 50%;
-    width: 100%;
+    border: 1px solid white;
 }
-
-
-
-.bars {
-    cursor: pointer;
-    display: none;
-    align-self: center;
-    justify-self: center;
-    min-height: 20px;
-    overflow: hidden;
+.userIcon i{
+    font-size: 1.1em;
+    color: white;
+    width: fit-content;
+    transition: transform .3s;
 }
-
-.bar {
-    width: 20px;
-    height: 2px;
-    background: white;
-    margin: 3px 0;
-    transition: all .2s ease-in-out;
-}
-
-.bar:nth-child(1).closeBtn {
-    transform: rotate(45deg) translate(4px, 3px);
-}
-
-.bar:nth-child(2).closeBtn {
-    display: none;
-}
-
-.bar:nth-child(3).closeBtn {
-    transform: rotate(-45deg);
+.userIcon i.rotate{
+    transform:rotate(180deg);
 }
 
 .header {
@@ -58,8 +39,6 @@ body{
     /* background: #03112c; */
     padding: 1em;
     color: #0043b8;
-    position: relative;
-    z-index: 9;
     transition: all .2s ease-in-out;
 }
 
@@ -78,7 +57,7 @@ body{
     
 } */
 .logoFlex img {
-    width: 400px;
+    width: 350px;
     margin: .5em 0;
 }
 
@@ -138,7 +117,42 @@ body{
 
 
 
-
+/* DROP DOWN NAV STYLING */
+.drop_down_nav .nav_box{
+    background: #000e27;
+    position: absolute;
+    right: 1em;
+    top: 8em;
+    width: 220px;
+    padding: 1em;
+    border-radius: 2px;
+    color: white;
+    transition: all .2s ease-in-out;
+    scale: 0;
+}
+.nav_box .nav_lists li{
+    list-style: none;
+    cursor: pointer;
+    margin: 1em 0;
+    position: relative;
+}
+.nav_box .nav_lists li::after{
+    content: "";
+    background: white;
+    cursor: auto;
+    width: 80%;
+    height: 1.5px;
+    position: absolute;
+    left: -3px;
+    bottom: -7px;
+}
+.nav_box .nav_lists li a{
+    color: white;
+    text-decoration: none;
+}
+.drop_down_nav .nav_box.nav_toggle{
+    scale: 1;
+}
 
 
 
@@ -178,18 +192,19 @@ body{
 
 
 .userContent{
+    font-family: 'Ubuntu', sans-serif;
     border: 1px solid grey;
     box-shadow: 1px 1px 5px 1px #46464673;
     border-radius: 5px;
-    margin-top: 1.5em;
+    margin: 1.5em 0;
     padding: 1em;
 }
 .userContent .userHead{
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 .userContent .dashboard{
-    background: #001a35;
+    background: #000e27;
     border-radius: 3px;
     color: white;
     padding: 1em;
@@ -203,9 +218,9 @@ body{
     color: dodgerblue
 }
 .userInfo{
-    margin-top: 1em;
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 30% 70%;
+    gap: 20px;
 }
 .userInfo1{
     width: fit-content;
@@ -222,24 +237,230 @@ body{
 }
 .userInfo1 .image img{
     width: 100%;
-    border: 5px solid #000e27;
-    border-radius: 50%;
+    border: 2px solid #000e27;
+    border-radius: 10px;
 }
 .userInfo1 .usernameInfo{
-    margin-top: .5em;
-    line-height: 1.5em;
     text-align: center;
+    line-height: 1.3em;
 }
-.userInfo2{
-    width: 100%;
-    padding: 1em;
-}
-.userInfo2 .userInfo2Box1{
-    line-height: 2em;
-    box-shadow: 1px 1px 5px 1px #000e27;
+.userInfo2 .userInfo2Box{
+    line-height: 1.3em;
     border-radius: 8px;
     padding: 1em;
 }
-.userInfo2Box1{
+.userInfo2Box h2{
+    padding: .3em 0;
+}
+.userInfo2 .userInfo2Box,
+.personal_details, 
+.contact_details{
+    margin-top: .5em;
+}
+.userInfo2 .userInfo2Box h2{
+    color: #000714;
+}
+.userInfo2 .userInfo2Box
+.personal_details h3, 
+.contact_details h3, 
+.bank_details h3{
+    margin-bottom: .2em;
+    color: #0043b8;
+}
+.userContent .bank_details{
+    padding: 1em;
+}
+.userContent .bank_d{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 
+
+
+
+
+footer {
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    background: #000714;
+    padding: 2em;
+    transition: all .2s ease-in-out;
+}
+.footerDisplay1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footerImg img{
+    width: 300px;
+}
+.subscribe p{
+    color: white;
+    margin: 0 0 .8em 0;
+    text-align: center;
+}
+.subscribe input{
+    padding: .5em .8em;
+    margin: 0;
+    border: 2px solid white;
+    outline: none;
+}
+.subscribe button{
+    padding: .5em .8em;
+    margin: 0;
+    border: 2px solid #0043b8;
+    outline: none;
+    background: #0043b8;
+    color: white;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.subscribe button:hover{
+    border: 2px solid #0043b8;
+    background: none;
+    color: white;
+}
+.footerDisplay2{
+    margin: 1.5em 0 0 0;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerDisplay2 p{
+    color: white;
+    width: fit-content;
+
+}
+.footerDisplay2 .socialLinks a{
+    color: white;
+    text-decoration: none;
+    margin-left: .8em;
+    width: fit-content;
+    transition: all .2s ease-in-out;
+}
+.footerDisplay2 .socialLinks a:nth-child(1):hover{
+    color: #00218f;
+}
+.footerDisplay2 .socialLinks a:nth-child(2):hover{
+    color: #004ab9;
+}
+.footerDisplay2 .socialLinks a:nth-child(3):hover{
+    color: #00790a;
+}
+.footerDisplay2 .socialLinks a:nth-child(4):hover {
+    color: #be0000;
+}
+.footerDisplay2 .socialLinks a i{
+    font-size: 1.1em;
+}
+
+.footerDisplay3{
+    text-align: center;
+    width: 100%;
+    margin: 1.5em 0 0 0;
+    color: white;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 990px)
+{
+    body{
+        border: 5px solid green;
+    }
+}
+
+@media only screen and (max-width: 860px){
+    .userInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .userInfo2 .userInfo2Box{
+        width: 100%;
+    }
+    .userInfo2 .userInfo2Box1{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .heading {
+        font-size: 18px;
+    }
+    .sectionHead{
+        width: 100%;
+    }
+    .header-flex {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    .logoFlex img {
+        width: 230px;
+    } 
+    .navLinks{
+        justify-self: flex-end;
+    }
+
+
+    .footerDisplay1 {
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    .subscribe {
+        width: 50%;
+    }
+    .subscribe input {
+        width: 100%;
+    }
+    .subscribe button {
+        margin: 3px 0 0 0;
+        display: block;
+        width: 100%;
+    }
+    .footerImg img {
+        width: 250px;
+        margin-bottom: 2em;
+    }
+    .footerDisplay2 {
+        margin: 2em 0 0 0;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+
+@media only screen and (max-width: 640px){
+
+    body{
+        border: 5px solid black;
+    }
+
+    .containerHead{
+        padding: 0em;
+    }
+
+    .drop_down_nav .nav_box{
+        top: 6.5em;
+    }
+    .subscribe {
+        width: 100%;
+    }
 }

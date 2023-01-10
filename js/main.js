@@ -18,7 +18,7 @@ const navLinks = document.querySelectorAll('.navLinks li');
 const logo = document.querySelector('.mainLogo');
 const burgers = document.querySelectorAll('.bar');
 
-window.addEventListener('scroll', () => {
+window.addEventListener('scroll', () => { 
 
     if(this.scrollY > 100){
         header.classList.add("headerBg");
@@ -114,4 +114,17 @@ window.addEventListener('scroll', () => {
         // clearInterval(setInterval(countUp, 800));
     }
 
+});
+
+
+// SCRIPT FOR DROP DOWN NAV FOR USERPROFILE
+window.addEventListener('load', () => {
+    let drop_down_nav = document.querySelector(".userIcon");
+    let drop_down_nav_icon = document.querySelector(".userIcon i");
+    let nav_list = document.querySelector(".nav_box");
+
+    drop_down_nav.addEventListener('click', () => {
+        nav_list.classList.toggle("nav_toggle");
+        drop_down_nav_icon.classList.toggle("rotate");
+    });
 });

@@ -357,6 +357,7 @@ img{
     cursor: pointer;
     width: 10%;
     font-size: 1.3em;
+    width: fit-content;
     transition: all .5s ease;
 }
 .faqContent{

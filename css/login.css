@@ -152,6 +152,17 @@ form{
     background: none;
 }
 
+.formContainer #sign_up_from_login{
+    margin: 0.8em 0;
+    text-align: center;
+}
+
+.formContainer #sign_up_from_login a{
+    color: dodgerblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 720px){
     .image {
         width: 200px;

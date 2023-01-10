@@ -10,60 +10,51 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Saira:wght@200;300;400&display=swap" rel="stylesheet">
 
+    <link rel="icon" href="./images/umc_icon.png" type="image/png" sizes="16x16">
     <link rel="stylesheet" href="./css/user.css">
-    <link rel="stylesheet" href="./css/responsive.css">
     <title>User Page</title>
 </head>
 
 <body>
 
-    <!-- <header class="header">
+    <header class="header">
         <div class="containerHead header-flex">
             <div class="logoFlex">
-                <img class="mainLogo" src="./images/umc_logo_full_white.png" alt="" srcset="">
-            </div>
-
-            <div class="bars">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+                <img class="" src="./images/umc_logo_full_white.png" alt="" srcset="">
             </div>
 
             <nav class="navLinks">
-                <a href="">
-                    <li>Home</li>
-                </a>
-                <a href="">
-                    <li>About</li>
-                </a>
-                <a href="">
-                    <li>Contact</li>
-                </a>
                 <div class="userIcon">
-                    <img src="./images/user3.jpg" alt="" srcset="">
+                    <img src="./images/user2.jpg" alt="" srcset="">
+                    <i class="fa-sharp fa-solid fa-caret-down"> </i>
                 </div>
-                 <a href="" class="navHeavy">
-                    <li>Login</li>
-                </a> 
             </nav>
-        </div>
-    </header> -->
-
-    <header>
-        <div class="imgLogo">
-            <img src="./images/umc_logo_full.png" alt="" srcset="">
         </div>
     </header>
 
+    <section class="drop_down_nav">
+        <div class="nav_box">
+            <div class="nav_lists">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="">Dashboard</a></li>
+                <li><a href="../Ultimate-Mathematics-Blog/Blog.html">Blog</a></li>
+                <li><a href="./user.html">Profile</a></li>
+                <li><a href="./login.html">Log out</a></li>
+            </div>
+        </div>
+    </section>
 
     <main>
         <div class="container">
             <div class="userContent">
                 <div class="dashboard">
                     <i class="fa-solid fa-chart-line"></i>
-                    <p class="userHead">DASHBOARD</p>
+                    <p class="userHead">USER PROFILE</p>
                 </div>
 
                 <div class="userInfo">
@@ -71,22 +62,52 @@
                         <div class="image">
                             <img src="./images/user2.jpg" alt="">
                         </div>
+
                         <div class="usernameInfo">
-                            <h4>Username</h4>
-                            <h4>UMC/0000</h4>
+                            <h4>Registration Number</h4>
+                            <h5>UMC/0000</h5>
                         </div>
                     </div>
 
                     <div class="userInfo2">
-                        <div class="userInfo2Box1">
-                            <h1>Fortune Iheanacho</h1>
+                        <div class="userInfo2Box">
+                            <h2>Welcome back</h2>
                             <hr>
-                            <p>School</p>
-                            <p>Address</p>
-                            <p>Date of Birth</p>
-                            <p>Class</p>
-                            <p>Email</p>
-                            <p>Phone Number</p>
+                            <div class="userInfo2Box1">
+                                <div class="personal_details">
+                                    <h3>Personal Details:</h3>
+                                    <p>Full Name: <span style="font-weight: bold;">My Full Name</span></p>
+                                    <p>Date of Birth: <span style="font-weight: bold;">4/12/2022</span></p>
+                                    <p>Gender: <span style="font-weight: bold;">Male/Female</p>
+                                    <p>School: <span style="font-weight: bold;">Ultimate Mathematics</p>
+                                    <p>Class: <span style="font-weight: bold;">Grade x</p>
+                                </div>
+
+                                <div class="contact_details">
+                                    <h3>Contact Details:</h3>
+                                    <p>Address: <span style="font-weight: bold;">2 New State Road</span></p>
+                                    <p>Telephone 1: <span style="font-weight: bold;">+23488445635</span></p>
+                                    <p>Telephone 2: <span style="font-weight: bold;">+14563837383</span></p>
+                                    <p>Email: <span style="font-weight: bold;">test_user@user.com</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bank_details">
+                    <h3>Bank Details</h3>
+                    <div class="bank_d">
+                        <div class="bank_namE">
+                            <p>Bank Name:</p>
+                            <p style="font-weight: bold;">New Standard Bank</p>
+                        </div>
+                        <div class="account_number">
+                            <p>Account Number:</p>
+                            <p style="font-weight: bold;">1223344556</p>
+                        </div>
+                        <div class="account_name">
+                            <p>Account Name:</p>
+                            <p style="font-weight: bold;">Mr User Name</p>
                         </div>
                     </div>
                 </div>
@@ -94,9 +115,44 @@
         </div>
     </main>
 
-    <section>
-        <div class="space"></div>
-    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footerDisplay1">
+                <div class="footerImg">
+                    <img src="./images/umc_text_main_white.png" alt="">
+                </div>
+
+                <div class="subscribe">
+                    <p>Subscribe to our Newsletter</p>
+                    <input type="text">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+
+            <div class="footerDisplay2">
+                <p>Follow us:</p>
+                <div class="socialLinks">
+                    <a href="https://Fb.me/ultimateMathematics">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://T.me/ultimateMathematics">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                    <a href="https://wa.me/message/QFFF3HV62LS3P1">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:ultimatemathematics01@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footerDisplay3">
+                <p>&copy; <span>2022</span> Ultimate Mathematics Competition</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="./js/main.js"></script>
 </body>
